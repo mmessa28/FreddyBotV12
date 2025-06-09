@@ -62,3 +62,5 @@ client.on('message_create', async msg => {
         }
     }
 });
+
+client.initialize();
