@@ -34,6 +34,8 @@ client.on('message_create', async msg => {
             await chat.removeParticipants([user]);
             await chat.sendMessage(`🚫 @${user.split('@')[0]} wurde wegen Fremdwerbung entfernt.`, { mentions });
             return;
+
+            client.initialize();
         }
 
         // Doppelte Nachricht
